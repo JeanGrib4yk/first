@@ -8,13 +8,14 @@ unit.innerHTML= '<a href=""></a>'
 const allUnits = document.querySelectorAll('.unit')
 log (allUnits)
 
+// convert NodeList to Array
 const allUnitsArr = Array.prototype.slice.call(allUnits);
 log(allUnitsArr)
 allUnitsArr.map(function(el){
     log(el)
 })
-// проработать функции, кэлбэки, !!методы массивов!!
 
+// just object 
 const data={
     place:{
         geoposition:{
